@@ -1,4 +1,5 @@
-struct creature test[2];
+#include "creature.h"
+struct creature creature[2];
 int main() {
 	
 	return 0;
