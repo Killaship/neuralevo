@@ -1,10 +1,10 @@
 
-struct coord {
+typedef struct coord {
     int x;
     int y;
 }coord;
 
-struct neuralnet {
+typedef struct neuralnet {
     char placeholder; // figure this stuff out later
 }neuralnet;
 
