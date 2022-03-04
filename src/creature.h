@@ -1,4 +1,4 @@
-
+#define GENOME_SIZE 4
 typedef struct coord {
     int x;
     int y;
@@ -9,7 +9,7 @@ typedef struct neuralnet {
 }neuralnet;
 
 struct creature {
-    short genome[4]; 
+    short genome[GENOME_SIZE]; 
     coord location;
     neuralnet neuralnet;
 };
