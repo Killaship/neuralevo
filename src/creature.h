@@ -10,7 +10,7 @@ struct neuralnet {
 };
 
 struct creature {
-    short genome[GENOME_SIZE];
+    short genome[GENOME_SIZE]; // don't forget -std=c99
     coord location;
     neuralnet neuralnet;
 };
