@@ -5,14 +5,14 @@
 
 struct creature creature[2];
 
-double random(double min, double max)
+double randomnum(double min, double max)
 {
     return (double)rand()/(double)RAND_MAX * (max - min) + min;
 }
 
 int main() {
 	srand(time(NULL));   // Initialization, should only be called once.
-	creature[0].genome[0] = (short) random(0,255);
+	creature[0].genome[0] = (short) randomnum(0,255);
 	printf("%d\n", rand() % 50);
 	return 0;
 }
