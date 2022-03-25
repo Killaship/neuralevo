@@ -1,3 +1,3 @@
 git pull
-gcc -Wall -Wextra -ffreestanding src/sim.c -o neuralevo.elf 
-./neuralevo.elf
+gcc -lsodium src/neuralevo.c -o neuralevo
+./neuralevo
