@@ -12,7 +12,7 @@ struct creature {
 int main() {   
 	struct creature creature[1];
 	int i = 0;
-	int i2 = 0;
+	int i2 = 1;
 	if (sodium_init() < 0) {
         	/* panic! the library couldn't be initialized, it is not safe to use */
         	return 1;
