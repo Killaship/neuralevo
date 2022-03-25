@@ -6,7 +6,7 @@ struct creature {
     char matrix[64];
     int loc;
     //neuralnet neuralnet[4]
-    int genome[16];
+    int genome[GENOME_SIZE];
 };
 
 int main() {   
@@ -23,6 +23,7 @@ int main() {
 		printf("%x",creature[0].genome[i]);
 		if(i2 == GENE_LENGTH) {
 			printf(" ");
+			i2 = -1;
 		}
 		i++;
 		i2++;
