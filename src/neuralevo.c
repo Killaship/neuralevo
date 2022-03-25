@@ -18,7 +18,7 @@ int main() {
         	return 1;
 	}
 
-	while(i <= GENOME_SIZE) {
+	while(i < GENOME_SIZE) {
 		creature[0].genome[i] = randombytes_uniform(16);
 		printf("%x",creature[0].genome[i]);
 		if(i2 == GENE_LENGTH) {
