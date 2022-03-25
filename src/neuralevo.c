@@ -18,7 +18,7 @@ int main()
     }
 
 
-    while(i < 3) {
+    while(i < 4) {
         genome[i] = randombytes_uniform(16);
 	    printf("%x",genome[i]);
         i++;
