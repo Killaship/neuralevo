@@ -23,7 +23,7 @@ int main() {
 		printf("%x",creature[0].genome[i]);
 		if(i2 == GENE_LENGTH) {
 			printf(" ");
-			i2 = -1;
+			i2 = 0;
 		}
 		i++;
 		i2++;
