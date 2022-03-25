@@ -1,6 +1,7 @@
 #include <sodium.h>
 #include <stdio.h>
 #define GENOME_SIZE 16
+#define GENE_LENGTH 4
 struct creature {
     char matrix[64];
     int loc;
@@ -20,7 +21,11 @@ int main() {
 	while(i < GENOME_SIZE) {
 		genome[i] = randombytes_uniform(16);
 		printf("%x",genome[i]);
+		if(i2 == GENE_LENGTH) {
+			printf(" ");
+		}
 		i++;
+		i2++;
 	}
 	printf("\n");
 }
