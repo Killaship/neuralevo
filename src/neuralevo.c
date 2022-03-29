@@ -3,11 +3,15 @@
 #define GENOME_SIZE 16
 #define GENE_LENGTH 4
 struct creature {
-    char matrix[64];
+    char [64];
     int loc;
     //neuralnet neuralnet[4]
     int genome[GENOME_SIZE];
 };
+
+typedef enum {
+	hlt, mvr, mvl
+} isa;
 
 int main() {   
 	struct creature creature[1];
@@ -29,4 +33,5 @@ int main() {
 		i2++;
 	}
 	printf("\n");
+	for
 }
