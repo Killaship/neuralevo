@@ -1,16 +1,25 @@
 #include <sodium.h>
 #include <stdio.h>
 #define GENOME_SIZE 3
-#define GENE_LENGTH 4
+#define CHROMOSOME_LENGTH 4
 struct creature {
-    char [64];
+    char line[8];
     int loc;
     //neuralnet neuralnet[4]
     int genome[GENOME_SIZE];
 };
 
 typedef enum {
-	hlt, mvr, mvl
+	hlt, // cease to exist
+	mvr, // move right
+	mvl, // move left
+	mrd, // be indecisive
+	spl, // be responsible for 2 creatures in the next gen
+	ffd, // check to see if there's food and try to eat it
+	nop, // be lazy
+	cmo, // disappear into your enviroment, lower chance of death, limited isa
+	ucm, // reappear into your world and regain power
+	
 } isa;
 
 int main() {   
@@ -25,7 +34,7 @@ int main() {
 	while(i < GENOME_SIZE) {
 		creature[0].genome[i] = randombytes_uniform(GENOME_SIZE);
 		printf("%x",creature[0].genome[i]);
-		if(i2 == GENE_LENGTH) {
+		if(i2 == CHROMOSOME_LENGTH) {
 			printf(" ");
 			i2 = 0;
 		}
